@@ -22,7 +22,7 @@ while true,
   i = i+1;
   if i == 6,
     break;
-  endif
+  endif;
 endwhile;
 
 function y = squareThisNumber(x)
