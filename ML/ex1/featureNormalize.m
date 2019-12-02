@@ -27,7 +27,13 @@ sigma = zeros(1, size(X, 2));
 %       
 
 
-
+mu = mean(X);
+%fprintf('mean = %f\n', mu);
+sigma = std(X);
+%sigma = max(X) - min(X);
+%fprintf('max - min = %f\n', sigma);
+X_norm = (X - mu)./sigma;
+fprintf('normalized X = %f\n', X_norm);
 
 
 

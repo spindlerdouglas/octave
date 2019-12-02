@@ -17,15 +17,9 @@ for iter = 1:num_iters
     %       of the cost function (computeCostMulti) and gradient here.
     %
 
-
-
-
-
-
-
-
-
-
+    hypothesis = (X * theta) - y;
+    % here we use X' times the hypothesis to achieve the same result as the SUM of all hypotheses for each THETA
+    theta = theta - alpha * (1 / m) * (X' * hypothesis);
 
     % ============================================================
 
